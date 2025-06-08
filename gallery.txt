@@ -1,0 +1,11 @@
+/galleryPhotos/longbeard.jpg
+/galleryPhotos/bald.jpg
+/galleryPhotos/landscape.jpg
+/galleryPhotos/longbeard.jpg
+/galleryPhotos/oldguy.png
+/galleryPhotos/square.jpg
+/galleryPhotos/bald.jpg
+/galleryPhotos/landscape.jpg
+/galleryPhotos/longbeard.jpg
+/galleryPhotos/oldguy.png
+/galleryPhotos/square.jpg

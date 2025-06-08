@@ -1,0 +1,45 @@
+
+
+.contentContainerAbout{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  min-width: 800px;
+  margin-top: 100px;
+  animation-name: cameraFocusAnim;
+  animation-duration: 2s;
+}
+
+
+#aboutPassage{
+  text-align: left;
+  font-size: 12px;
+}
+.aboutText{
+  width: 400px;
+}
+.aboutImage{
+  width: 400px;
+}
+
+.aboutPic{
+  width: 300px;
+  border: 5px solid white;
+}
+
+@keyframes cameraFocusAnim {
+  0%{
+    filter: blur(6px);
+  }
+  50%{
+    filter: blur(0px);
+  }
+  70%{
+    filter: blur(2px);
+  }
+  100%{
+    filter: blur(0px);
+  }
+  
+}

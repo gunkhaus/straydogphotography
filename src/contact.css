@@ -1,0 +1,80 @@
+body{
+    text-align: center;
+}
+.contactTitle{
+  transition-duration: 0.4s;
+  margin-left: 15%;
+}
+.contactTitle:hover{
+  cursor:default;
+}
+.formBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contactContent{
+    margin-top: 20px;
+    min-width: 800px;
+}
+
+.emailForm{
+    margin-top: 20px;
+    width: 1920px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+input,textarea{
+    outline: none;
+    border: 2px solid white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 16px;
+}
+
+textarea{
+    line-height: 1.5;
+    vertical-align: top;
+    height: 50vh;
+}
+
+input::placeholder,textarea::placeholder{
+    line-height:1.5;
+    font-family: space-mono;
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+
+input:focus,textarea:focus{
+    border-color: blue;
+}
+
+input:hover::placeholder,textarea:hover::placeholder{
+    /*letter-spacing: 1px;*/
+    cursor: text;
+    
+}
+
+
+.submitButton{
+    font-family: space-mono;
+    color: white;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.submitButton:hover{
+    box-shadow: -8px 8px blue;
+    border-color: white;
+}
+
+.entireContactPageContainer{
+    min-width: 700px;
+    
+}

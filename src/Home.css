@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'space-mono';
+    src: url('./assets/fonts/SpaceMono-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'space-mono-italic';
+    src: url('./assets/fonts/SpaceMono-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'helvetica';
+    src: url('./assets/fonts/Helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url('./assets/fonts/Helvetica-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helvetica-light-italic';
+    src: url('./assets/fonts/HEL-LIGHT.ttf') format('truetype');
+    font-style: italic;
+    
+}
+
+@font-face {
+    font-family: 'space-mono-italic';
+    src: url('./assets/fonts/SpaceMono-Italic.ttf') format('truetype');
+    font-style: italic;
+    font-weight: 300;
+}
+
+
+
+
+
+h1{
+    font-family: space-mono;
+    letter-spacing: -2px;
+    color: white;
+    font-size: 30px;
+    text-wrap:nowrap;
+    float: left;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+h2{
+    color: white;
+    font-family: helvetica-bold;
+    font-size: 80px;
+    letter-spacing: -10px;
+    padding: 0px;
+    margin:0px;
+    margin-left: 20px;
+    text-align: left;
+    transition-duration: 0.4s;
+}
+
+h2:hover{
+    letter-spacing: -8px;
+}
+h3{
+    position: absolute;
+    color: white;
+    text-align: left;
+    margin-left:10px;
+    font-family: 'helvetica'; 
+    font-style: italic;
+    font-weight: lighter;
+    bottom: 73px;
+}
+h4{
+    float: left;
+    color: white;
+    font-family: helvetica;
+}
+p{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: space-mono;
+    color: white;
+    font-size: 20px;
+}
+
+body{
+    background-color: black;
+
+}
+.homePortrait{
+    float: left;
+    margin-left: 4vw;
+    margin-top:4vh;
+    height: 700px;
+}
+.homeContentsWrapper{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.recentPhotosHome{
+    border: 2px solid white;
+    width: 700px;
+    height: 700px;
+    float: right;
+    margin-right: 4vw;
+    margin-top: 4vh;
+}
+.homeParagraph{
+    margin-top: 4vh;
+    width: 30vw;
+    float: left;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-flow: column;
+}
+.homeImageWrapper{
+    position: relative;
+}
+.imgHomeTitle{
+    position: absolute;
+    padding: 0px;
+    margin: 0px;
+    top: 700px;
+    left:355px;
+    
+}
+.homePictureAndTitle{
+    display: flex;
+    flex-direction: row;
+}
+#recentPic{
+    display: block;
+    height: 12.5vh;
+    margin-top: 15px;
+    margin-left: 10px;
+    border: 2px solid white;
+}
+.navbar{   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 10%;
+    min-width: 800px;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#dropdownButton{
+    background-color: black;
+}
+#dropdownMenu{
+    display: none;
+    text-align: center;
+    text-wrap: nowrap;
+    white-space: nowrap;
+    background-color: var(--backing);
+    list-style: none;
+    margin:0;
+    margin-left: -100px;
+    padding: 0;
+    z-index: 10; 
+  }
+
+
+.navbar button{
+    font-family: monospace;
+    color: white;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: none;
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    width: 100px;
+    transition: 0.6s;
+    padding: 15px 10px;
+    animation-duration: 0.5s;
+}
+.navButton{
+    position: absolute;
+    background-color: var(--backing);
+    animation-fill-mode: forwards;
+}
+@keyframes galleryButtonAnim{
+    from {transform: translateX(0px);}
+    to{transform: translateX(100px);}
+}
+@keyframes aboutButtonAnim{
+    from {transform: translateX(0px);}
+    to{transform: translateX(200px);}
+}
+@keyframes contactButtonAnim{
+    from {transform: translateX(0px);}
+    to{transform: translateX(300px);}
+}
+
+#galleryButton button{
+    animation-name: galleryButtonAnim;
+}
+#aboutButton button{
+    animation-name: aboutButtonAnim;
+}
+#contactButton button{
+    animation-name: contactButtonAnim;
+}
+
+.navbar button:hover{
+    letter-spacing: -1px;
+}
+#dropdownMenu.show {
+    display: block;
+  }
+#socialButton{
+    width: 20px;
+    height: 20px;
+
+}
+:root{
+    --backing: blue;
+}
+
+
+
+@keyframes dropdownAnim{
+    from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-20deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+

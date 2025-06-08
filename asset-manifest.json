@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/straydogphotography/static/css/main.d6aa3b65.css",
-    "main.js": "/straydogphotography/static/js/main.6acbeac6.js",
+    "main.js": "/straydogphotography/static/js/main.996573aa.js",
     "static/js/453.ad6eb26e.chunk.js": "/straydogphotography/static/js/453.ad6eb26e.chunk.js",
     "static/media/Helvetica.ttf": "/straydogphotography/static/media/Helvetica.06113bf748ae7dc33e05.ttf",
     "static/media/Helvetica-Bold.ttf": "/straydogphotography/static/media/Helvetica-Bold.ed57aca7292971d8548c.ttf",
@@ -11,11 +11,11 @@
     "static/media/logo.svg": "/straydogphotography/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/straydogphotography/index.html",
     "main.d6aa3b65.css.map": "/straydogphotography/static/css/main.d6aa3b65.css.map",
-    "main.6acbeac6.js.map": "/straydogphotography/static/js/main.6acbeac6.js.map",
+    "main.996573aa.js.map": "/straydogphotography/static/js/main.996573aa.js.map",
     "453.ad6eb26e.chunk.js.map": "/straydogphotography/static/js/453.ad6eb26e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6aa3b65.css",
-    "static/js/main.6acbeac6.js"
+    "static/js/main.996573aa.js"
   ]
 }

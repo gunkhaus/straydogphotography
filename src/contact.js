@@ -1,6 +1,5 @@
 
 import "./Home.css";
-import "./contact.css";
 import Navbar from "./navbar";
 import emailjs from '@emailjs/browser';
 import React, { useRef } from 'react';
@@ -31,11 +30,14 @@ function Contact(){
         <Navbar />
        
        <div className="contactContent">
-            <h2 className="contactTitle">contact</h2>
+            
                 <div className="formBox">
+
                     
                     <form className="emailForm" ref={form} onSubmit={sendEmail}>
-                        
+                     
+                        <div id="contactTitle">contact</div>
+                       
                         <input type="text" name="user_name" placeholder="name" />
                         
                         <input type="email" name="user_email" placeholder="email" />

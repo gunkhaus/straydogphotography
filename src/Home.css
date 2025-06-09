@@ -59,7 +59,6 @@ h2{
     letter-spacing: -10px;
     padding: 0px;
     margin:0px;
-    margin-left: 20px;
     text-align: left;
     transition-duration: 0.4s;
 }
@@ -94,6 +93,12 @@ body{
     background-color: black;
 
 }
+#mainTitle{
+    font-size: 1.5rem;
+    padding: 0;
+    margin: 0;
+}
+
 .homePortrait{
     float: left;
     margin-left: 4vw;
@@ -146,9 +151,10 @@ body{
 .navbar{   
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 10%;
-    min-width: 800px;
+    justify-content: space-evenly;
+    gap: 30vw;
+    column-gap: 1px;
+    
 }
 .navbar ul{
     display: flex;
@@ -160,6 +166,7 @@ body{
     background-color: black;
 }
 #dropdownMenu{
+    position: absolute;
     display: none;
     text-align: center;
     text-wrap: nowrap;
@@ -167,8 +174,8 @@ body{
     background-color: var(--backing);
     list-style: none;
     margin:0;
-    margin-left: -100px;
-    padding: 0;
+    width: 100%;
+   left: -50%;
     z-index: 10; 
   }
 
@@ -183,30 +190,46 @@ body{
     border: none;
     padding: 15px 32px;
     text-decoration: none;
-    width: 100px;
+    width: 25%;
     transition: 0.6s;
     padding: 15px 10px;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
+    font-size: 16px;
+    
 }
 .navButton{
     position: absolute;
     background-color: var(--backing);
     animation-fill-mode: forwards;
 }
-@keyframes galleryButtonAnim{
-    from {transform: translateX(0px);}
-    to{transform: translateX(100px);}
-}
-@keyframes aboutButtonAnim{
-    from {transform: translateX(0px);}
-    to{transform: translateX(200px);}
-}
-@keyframes contactButtonAnim{
-    from {transform: translateX(0px);}
-    to{transform: translateX(300px);}
-}
+#homeButton button{
+        width: 25%;
+    }
+    #galleryButton button{
+        width: 25%;
+    }
+    #aboutButton button{
+        width: 25%;
+    }
+    #contactButton button{
+        width: 25%;
+    }
 
+
+    @keyframes galleryButtonAnim{
+    from {transform: translateX(0px);}
+    to{transform: translateX(100%);}
+    }
+    @keyframes aboutButtonAnim{
+        from {transform: translateX(0px);}
+        to{transform: translateX(200%);}
+    }
+    @keyframes contactButtonAnim{
+        from {transform: translateX(0px);}
+        to{transform: translateX(300%);}
+    }
 #galleryButton button{
+
     animation-name: galleryButtonAnim;
 }
 #aboutButton button{
@@ -227,6 +250,92 @@ body{
     height: 20px;
 
 }
+
+#contactTitle{
+    margin-bottom: 20px;
+    width: 100%;
+    color: white;
+    font-family: helvetica-bold;
+    font-size: 80px;
+    letter-spacing: -10px;
+    padding: 0px;
+    margin:0px;
+    text-align: left;
+    transition-duration: 0.4s;
+}
+
+.contactTitle:hover{
+  cursor:default;
+}
+.formBox{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.contactContent{
+    margin-top: 40px;
+}
+
+.emailForm{
+    margin-top: 20px;
+    text-align: left; /* make inner text align left */
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+input,textarea{
+    outline: none;
+    border: 2px solid white;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    transition-duration: 0.4s;
+    font-size: 16px;
+}
+
+textarea{
+    line-height: 1.5;
+    vertical-align: top;
+    height: 50vh;
+}
+
+input::placeholder,textarea::placeholder{
+    line-height:1.5;
+    font-family: space-mono;
+    font-size: 15px;
+    transition-duration: 0.4s;
+}
+
+input:focus,textarea:focus{
+    border-color: blue;
+}
+
+input:hover::placeholder,textarea:hover::placeholder{
+    /*letter-spacing: 1px;*/
+    cursor: text;
+    
+}
+
+.submitButton{
+    font-family: space-mono;
+    color: white;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.submitButton:hover{
+    box-shadow: -8px 8px blue;
+    border-color: white;
+}
+
 :root{
     --backing: blue;
 }
@@ -253,3 +362,93 @@ body{
 }
 
 
+
+
+.contentContainerAbout{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  animation-name: cameraFocusAnim;
+  animation-duration: 2s;
+  width: 100%;
+
+}
+
+#aboutPassage{
+  text-align: left;
+  font-size: 12px;
+}
+.aboutText{
+  width: 400px;
+
+}
+.aboutImage{
+    width: 400px;
+   
+}
+
+.aboutPic{
+  width: 300px;
+  border: 5px solid white;
+}
+
+@keyframes cameraFocusAnim {
+  0%{
+    filter: blur(6px);
+  }
+  50%{
+    filter: blur(0px);
+  }
+  70%{
+    filter: blur(2px);
+  }
+  100%{
+    filter: blur(0px);
+  }
+  
+}
+
+
+
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .contentContainerAbout{
+        display: block;
+        text-align: center;
+        flex-direction: column;
+        margin-top: 40px;
+        
+    }
+
+    .aboutImage{
+        width: 100%;
+    }
+    .aboutText{
+        width: 100%;
+    }
+    
+    #mainTitle {
+        font-size:4vw;
+    }
+   
+    body{
+    }
+    .navbar{
+        column-gap: -100px;
+     
+    }
+
+    .navbar button{
+        transition-duration: 0.5s;
+    }
+
+   
+
+}

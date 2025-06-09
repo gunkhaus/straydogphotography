@@ -18,7 +18,7 @@ function Navbar(){
             <div className="dropdown">
                 <button id="dropdownButton" onClick={showMenu}>Menu</button>
                     <ul ref={menuRef} id="dropdownMenu"> 
-                            <li id ="homeButtton" className="pageLinks"><Link to = "/ "> <button className="navButton" >home</button> </Link></li>
+                            <li id="homeButton" className="pageLinks"><Link to = "/ "> <button className="navButton" >home</button> </Link></li>
                             <li id="galleryButton" className="pageLinks"><Link to = "/Gallery " > <button className="navButton" >gallery</button> </Link></li>
                             <li id="aboutButton" className="pageLinks"><Link to = "/about " > <button className="navButton">about</button> </Link></li>
                             <li id="contactButton" className="pageLinks"><Link to = "/contact " > <button className="navButton" >contact</button> </Link></li>  

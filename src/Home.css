@@ -175,7 +175,7 @@ body{
     list-style: none;
     margin:0;
     width: 100%;
-   left: -50%;
+    left: -50%;
     z-index: 10; 
   }
 
@@ -184,11 +184,9 @@ body{
     font-family: monospace;
     color: white;
     height: 50px;
-    font-size: 20px;
     cursor: pointer;
     background-color: none;
     border: none;
-    padding: 15px 32px;
     text-decoration: none;
     width: 25%;
     transition: 0.6s;
@@ -202,18 +200,6 @@ body{
     background-color: var(--backing);
     animation-fill-mode: forwards;
 }
-#homeButton button{
-        width: 25%;
-    }
-    #galleryButton button{
-        width: 25%;
-    }
-    #aboutButton button{
-        width: 25%;
-    }
-    #contactButton button{
-        width: 25%;
-    }
 
 
     @keyframes galleryButtonAnim{
@@ -439,10 +425,6 @@ input:hover::placeholder,textarea:hover::placeholder{
     }
    
     body{
-    }
-    .navbar{
-        column-gap: -100px;
-     
     }
 
     .navbar button{

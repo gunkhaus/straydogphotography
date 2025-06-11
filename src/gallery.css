@@ -8,26 +8,30 @@
 
 .galleryTable{
     table-layout: fixed;
-    min-width: 800px;
+    margin-top: 20px;
 }
 #galleryPictureAndTitle{
     display: flex;
     flex-direction: column;
+    padding: 0;
 }
 
 #galleryPicture{
-    width:20vmax;
+    width:20vw;
     transition-duration: 0.4s;
+    
 }
 #galleryPicture:hover{
-  width: 21vmax;
+  width: 21vw;
   z-index: 10;
 }
 
 #galleryPictureButton {
+    padding: 0;
     border: none;
     background: none;
     cursor: pointer;
+
 }
 
 #bigPicture{

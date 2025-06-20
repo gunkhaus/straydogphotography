@@ -2,7 +2,7 @@
 import "./Home.css";
 import Navbar from "./navbar";
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 function Home(){
 
@@ -12,11 +12,13 @@ function Home(){
             <Navbar />
 
             <div className="homeContentsWrapper">
-                <div className="homeImageWrapper">
-                    <img className="homePortrait" src={`${process.env.PUBLIC_URL}/otherPhotos/homePortrait.png`} />
+                <p className="homepageText">welcome to</p>
+                <h1 className="homepageText" >straydogphotography</h1>
+                <div className="homeOptions"></div>
+                    <Link to = "/Gallery " className="homepagePageLink"> <button className="homepagePageButtons">gallery</button> </Link>
+                    <Link to = "/about " className="homepagePageLink"> <button className="homepagePageButtons">about</button> </Link>
+                    <Link to = "/contact " className="homepagePageLink"> <button className="homepagePageButtons" >contact</button> </Link> 
                 </div>
-                
-            </div>
         </div>
         
     );

@@ -47,7 +47,6 @@ h1{
     color: white;
     font-size: 30px;
     text-wrap:nowrap;
-    float: left;
     margin-right: 60px;
     margin-left: 60px;
 }
@@ -74,7 +73,6 @@ h3{
     font-family: 'helvetica'; 
     font-style: italic;
     font-weight: lighter;
-    bottom: 73px;
 }
 h4{
     float: left;
@@ -82,8 +80,7 @@ h4{
     font-family: helvetica;
 }
 p{
-    margin-left: 20px;
-    margin-right: 20px;
+    
     font-family: space-mono;
     color: white;
     font-size: 20px;
@@ -92,6 +89,30 @@ p{
 body{
     background-color: black;
 
+}
+.homepageText{
+    text-align: center;
+    padding: 0;
+    margin: -10px;
+}
+.homeOptions{
+    margin-top: 15px;
+}
+.homepagePageLink{
+    text-decoration: none;
+}
+.homepagePageButtons{
+    font-family: space-mono;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    text-decoration: underline 1px solid white;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.homepagePageButtons:hover{
+    background-color: blue;
 }
 #mainTitle{
     font-size: 1.5rem;
@@ -106,9 +127,10 @@ body{
     height: 700px;
 }
 .homeContentsWrapper{
-    display: flex;
-    flex-direction:row;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    margin-top: 37vh;
+
 }
 .recentPhotosHome{
     border: 2px solid white;
@@ -191,8 +213,7 @@ body{
     width: 25%;
     transition: 0.6s;
     padding: 15px 10px;
-    animation-duration: 1s;
-    font-size: 16px;
+    font-size: 20px;
     
 }
 .navButton{
@@ -201,28 +222,29 @@ body{
     animation-fill-mode: forwards;
 }
 
+@keyframes navbarButtonAnim{
+    from {opacity: 0;}
+    to{opacity: 1;}
+}
 
-    @keyframes galleryButtonAnim{
-    from {transform: translateX(0px);}
-    to{transform: translateX(100%);}
-    }
-    @keyframes aboutButtonAnim{
-        from {transform: translateX(0px);}
-        to{transform: translateX(200%);}
-    }
-    @keyframes contactButtonAnim{
-        from {transform: translateX(0px);}
-        to{transform: translateX(300%);}
-    }
+#homeButton{
+    animation-duration: 0.2s;
+    animation-name: navbarButtonAnim;
+}
 #galleryButton button{
-
-    animation-name: galleryButtonAnim;
+    animation-duration: 0.6s;
+    animation-name: navbarButtonAnim;
+    transform: translateX(100%);
 }
 #aboutButton button{
-    animation-name: aboutButtonAnim;
+    animation-duration: 0.6s;
+    animation-name: navbarButtonAnim;
+    transform: translateX(200%);
 }
 #contactButton button{
-    animation-name: contactButtonAnim;
+    animation-duration: 0.8s;
+    animation-name: navbarButtonAnim;
+    transform: translateX(300%);
 }
 
 .navbar button:hover{
@@ -264,6 +286,7 @@ body{
 }
 .contactContent{
     margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .emailForm{
@@ -286,8 +309,41 @@ input,textarea{
     color: white;
     transition-duration: 0.4s;
     font-size: 16px;
+    resize: none;
+    overflow-y: scroll;
+
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background:none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: white;
+ 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+  
+}
+::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+
+}
+
+::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+
+}
 textarea{
     line-height: 1.5;
     vertical-align: top;
@@ -355,23 +411,28 @@ input:hover::placeholder,textarea:hover::placeholder{
   text-align: center;
   align-items: center;
   justify-content: center;
-  margin-top: 100px;
   animation-name: cameraFocusAnim;
   animation-duration: 2s;
   width: 100%;
-
+  margin-top: 180px;
+  margin-bottom: 200px;
 }
 
 #aboutPassage{
   text-align: left;
-  font-size: 12px;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+  
 }
 .aboutText{
   width: 400px;
 
 }
 .aboutImage{
-    width: 400px;
+ 
+
+    margin-right: 20px;
    
 }
 
@@ -427,9 +488,7 @@ input:hover::placeholder,textarea:hover::placeholder{
     body{
     }
 
-    .navbar button{
-        transition-duration: 0.5s;
-    }
+ 
 
    
 

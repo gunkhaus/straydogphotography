@@ -87,7 +87,8 @@ body{
 .homepageText{
     text-align: center;
     padding: 0;
-    margin: -10px;
+    margin-bottom: -10px;
+    margin-top: -10px;
 }
 .homeOptions{
     margin-top: 15px;
@@ -106,10 +107,10 @@ body{
     transition-duration: 0.4s;
 }
 .homepagePageButtons:hover{
-    background-color: blue;
+    background-color: var(--prime-color);
 }
 #mainTitle{
-    font-size: 1.5rem;
+    font-size:calc(12px + 1rem);
     padding: 0;
     margin: 0;
 }
@@ -167,10 +168,11 @@ body{
 .navbar{   
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     column-gap: 1px;
     
 }
+
 .navbar ul{
     display: flex;
     list-style-type: none;
@@ -179,6 +181,8 @@ body{
 }
 #dropdownButton{
     background-color: black;
+    font-size: 16px;
+    margin-left: 10px;
 }
 #dropdownMenu{
     position: absolute;
@@ -186,13 +190,14 @@ body{
     text-align: center;
     text-wrap: nowrap;
     white-space: nowrap;
-    background-color: var(--backing);
+    background-color: var(--prime-color);
     list-style: none;
     margin:0;
     width: 100%;
     left: -50%;
-    z-index: 10; 
+    z-index: 0; 
   }
+
 
 
 .navbar button{
@@ -203,40 +208,54 @@ body{
     background-color: none;
     border: none;
     text-decoration: none;
-    width: 25%;
+    width: 25vw;
     transition: 0.6s;
     padding: 15px 10px;
     font-size: 20px;
+    width: 10%;
     
+}
+
+#dropdownMenu button {
+
+    width: 25vw;
+    margin: -.25px;
 }
 .navButton{
     position: absolute;
-    background-color: var(--backing);
+    background-color: var(--prime-color);
     animation-fill-mode: forwards;
 }
 
-@keyframes navbarButtonAnim{
-    from {opacity: 0;}
-    to{opacity: 1;}
+@keyframes navbarButtonAnimGallery{
+    from {transform: translateX(0%);}
+    to{transform: translateX(100%);}
+}
+@keyframes navbarButtonAnimAbout{
+    from {transform: translateX(0%);}
+    to{transform: translateX(200%);}
+}
+@keyframes navbarButtonAnimContact{
+    from {transform: translateX(0%);}
+    to{transform: translateX(300%);}
 }
 
-#homeButton{
-    animation-duration: 0.2s;
-    animation-name: navbarButtonAnim;
+.contactNavbar{
+     margin-right: 10px;
 }
 #galleryButton button{
     animation-duration: 0.6s;
-    animation-name: navbarButtonAnim;
+    animation-name: navbarButtonAnimGallery;
     transform: translateX(100%);
 }
 #aboutButton button{
-    animation-duration: 0.6s;
-    animation-name: navbarButtonAnim;
+    animation-duration: 0.8s;
+    animation-name: navbarButtonAnimAbout;
     transform: translateX(200%);
 }
 #contactButton button{
-    animation-duration: 0.8s;
-    animation-name: navbarButtonAnim;
+    animation-duration: 1s;
+    animation-name: navbarButtonAnimContact;
     transform: translateX(300%);
 }
 
@@ -278,7 +297,7 @@ body{
     
 }
 .contactContent{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 40px;
 }
 
@@ -351,7 +370,7 @@ input::placeholder,textarea::placeholder{
 }
 
 input:focus,textarea:focus{
-    border-color: blue;
+    border-color: var(--prime-color);
 }
 
 input:hover::placeholder,textarea:hover::placeholder{
@@ -367,35 +386,13 @@ input:hover::placeholder,textarea:hover::placeholder{
     transition: 0.4s;
 }
 .submitButton:hover{
-    box-shadow: -8px 8px blue;
+    box-shadow: -8px 8px var(--prime-color);
     border-color: white;
 }
 
 :root{
-    --backing: blue;
+    --prime-color: blue;
 }
-
-
-
-@keyframes dropdownAnim{
-    from {background-color: red;}
-  to {background-color: yellow;}
-}
-
-@keyframes rotateX {
-  0% {
-    opacity: 0;
-    transform: rotateX(-90deg);
-  }
-  50% {
-    transform: rotateX(-20deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
-  }
-}
-
 
 
 

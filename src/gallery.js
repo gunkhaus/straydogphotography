@@ -80,7 +80,7 @@ function Gallery() {
                     //on click of a specific image, make the bigImage div visible, and set the src to the specific image clicked
                     //also make the caption the parsed title of the given image clicked.
                     images[i].onclick = function(){
-                        bigImage.style.display = "block";
+                        bigImage.style.display = "flex";
                         modalImg.src = this.src;
                         modalImg.alt = this.alt;
                         captionText.innerHTML=titles[i];

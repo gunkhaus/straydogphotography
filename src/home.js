@@ -13,7 +13,7 @@ function Home(){
 
             <div className="homeContentsWrapper">
                 <p className="homepageText">welcome to</p>
-                <h1 className="homepageText" >straydogphotography</h1>
+                <h1 id="homepageText" >straydogphotography</h1>
                 <div className="homeOptions"></div>
                     <Link to = "/Gallery " className="homepagePageLink"> <button className="homepagePageButtons">gallery</button> </Link>
                     <Link to = "/about " className="homepagePageLink"> <button className="homepagePageButtons">about</button> </Link>

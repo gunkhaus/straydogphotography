@@ -26,7 +26,7 @@ function Navbar(){
             </div>
             
             <div className="websiteTitle">
-                <h1 id="mainTitle">stray dog photography</h1>
+                <h1 id="mainTitle">STRAY DOG PHOTOGRAPHY</h1>
             </div>
 
             <div className="contactNavbar">
